@@ -1,4 +1,4 @@
-<form >
+<form (ngSubmit)="submitForm()">
 
     <h1>REGISTRO DE APLICACIÓN</h1>
 
@@ -16,12 +16,12 @@
         <tbody>
             <tr>
                 <td>
-                    <label for="1" class="form-label">¿En qué día estamos?</label>
+                    <label for="1" class="form-label">¿En qué día estamos?</label> 
                 </td>
                 <td>
                     <!-- <label>Nombre:</label> -->
                     <input type="text" name="dia" [(ngModel)]="dia" id="1">
-
+                   
                 </td>
                 <td>
                     <div class="form-check">
@@ -43,7 +43,7 @@
                 <td>
                     <!-- <label>Nombre:</label> -->
                     <input type="text" name="mes" [(ngModel)]="mes">
-
+                   
                 </td>
                 <td>
                     <div class="form-check">
@@ -65,7 +65,7 @@
                 <td>
                     <!-- <label>Nombre:</label> -->
                     <input type="text" name="ano" [(ngModel)]="ano">
-
+                   
                 </td>
                 <td>
                     <div class="form-check">
@@ -87,7 +87,7 @@
                 <td>
                     <!-- <label>Nombre:</label> -->
                     <input type="text" name="hora" [(ngModel)]="hora">
-
+                   
                 </td>
                 <td>
                     <div class="form-check">
@@ -174,7 +174,7 @@
             <tbody>
                 <tr>
                     <td>¿Cuántos años tiene?</td>
-
+              
                 <td>
                     <input type="text" name="anos" [(ngModel)]="anos">
                 </td>

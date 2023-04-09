@@ -29,15 +29,19 @@ import { ParesAsociadosComponent } from './Components/pares-asociados2/pares-aso
 import { MeCarasComponent } from './Components/me-caras/me-caras.component';
 import { ResultadoComponent } from './Components/Fluidez_verbal/resultado/resultado.component';
 import { DetecciondigitosComponent } from './Components/detecciondigitos/detecciondigitos.component';
+import { FuncionesComponent } from './Components/funciones/funciones.component';
+import { FuncionesReacComponent } from './Components/funciones-reac/funciones-reac.component';
+import { FuncionesMotorasComponent } from './Components/funciones-motoras/funciones-motoras.component';
+import { flComponent } from './Components/funciones-motoras/resultado/resultado.component';
+import { CambiomanoComponent } from './Components/cambiomano/cambiomano.component';
 
 
 
 const ROUTES:Routes =[
   { path: '', component: LoginComponent, pathMatch:'full'},
-  {path:'pacientes', component:PatientsComponent, },
-  {path:'nuevoPaciente', component:CreatePatientsComponent,},
-  {path:'editarEliminarPaciente/:id', component:EditDeletePatientsComponent,},
-
+  {path:'pacientes', component:PatientsComponent, canActivate:[AuthGuard]},
+  {path:'nuevoPaciente', component:CreatePatientsComponent,canActivate:[AuthGuard]},
+  {path:'editarEliminarPaciente/:id', component:EditDeletePatientsComponent,canActivate:[AuthGuard]},
   { path: 'historiaClinica1', component: HistoriaClinica1Component },
   { path: 'historiaClinica2', component: HistoriaClinica2Component },
   { path: 'rdr', component: PruebaComponent },
@@ -66,10 +70,16 @@ const ROUTES:Routes =[
   {path:'mecaras', component:MeCarasComponent},
   {path:'fluidezverbalRes', component:ResultadoComponent},
   {path:'detecciondigitos', component:DetecciondigitosComponent},
+  {path:'funciones', component:FuncionesComponent},
+  {path:'funcionesreact', component:FuncionesReacComponent},
+  {path:'funcionesmotoras', component:FuncionesMotorasComponent},
+  {path:'funcioncambio', component:CambiomanoComponent},
 
+  
+  
+  
 
-
-
+  
 ]
 
 @NgModule({

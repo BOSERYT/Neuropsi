@@ -12,9 +12,9 @@
     <textarea name="parrafo1" id="parrafo1" cols="30" rows="10" class="input1"  placeholder="Escribe a qui lo que recuerdas..." formControlName="parrafo1"></textarea>
 
     <div class="alert alert-danger" [hidden]="parrafo1.valid || parrafo1.pristine">El campo "Parafo 1:" es obligatorio.</div>
-
+    
     <p>(Ver los cuadros para calificacion de Memoria Logica anexos al final del protocolo de aplicacion).</p>
-
+    
     <div class="input-group">
     <label for="" class="input-group-text">Unidad Historia</label>
     <input type="text" class="form-control" formControlName="historia"></div>
@@ -32,7 +32,7 @@
         <label for="" class="input-group-text">Unidad Tema
         </label>
         <input type="text" class="form-control"
-        formControlName="tema">
+        formControlName="tema">  
     </div>
 
     <div class="alert alert-danger mt-2" [hidden]="tema.valid || tema.pristine">
@@ -51,9 +51,9 @@
     <textarea name="parrafo2" id="parrafo2" cols="30" rows="10" class="input1"  placeholder="Escribe a qui lo que recuerdas..." formControlName="parrafo2"></textarea>
 
     <div class="alert alert-danger" [hidden]="parrafo2.valid || parrafo2.pristine">El campo "Parafo 2:" es obligatorio.</div>
-
+    
     <p>(Ver los cuadros para calificacion de Memoria Logica anexos al final del protocolo de aplicacion).</p>
-
+    
     <div class="input-group">
     <label for="" class="input-group-text">Unidad Historia</label>
     <input type="text" class="form-control" formControlName="historia2"></div>
@@ -71,7 +71,7 @@
         <label for="" class="input-group-text">Unidad Tema
         </label>
         <input type="text" class="form-control"
-        formControlName="tema2">
+        formControlName="tema2">  
     </div>
 
     <div class="alert alert-danger mt-2" [hidden]="tema2.valid || tema2.pristine">
@@ -89,7 +89,7 @@
         <label for="" class="input-group-text">Total Promedio Historias
         </label>
         <input type="text" class="form-control"
-        formControlName="phistoria">
+        formControlName="phistoria">  
     </div>
 
     <div class="alert alert-danger mt-2" [hidden]="phistoria.valid || phistoria.pristine">
@@ -105,7 +105,7 @@
         <label for="" class="input-group-text">Total Promedio Temas
         </label>
         <input type="text" class="form-control"
-        formControlName="ptema">
+        formControlName="ptema">  
     </div>
 
     <div class="alert alert-danger mt-2" [hidden]="ptema.valid || ptema.pristine">
@@ -121,7 +121,7 @@
         <label for="" class="input-group-text">Porcentaje de Evocacion
         </label>
         <input type="text" class="form-control"
-        formControlName="pevocacion">
+        formControlName="pevocacion">  
     </div>
 
     <div class="alert alert-danger mt-2" [hidden]="pevocacion.valid || pevocacion.pristine">
@@ -134,5 +134,5 @@
     </div>
 
     <button class="btn btn-primary" [disabled]="formEvocacion.invalid">Guardar</button>
-
+    
 </form>

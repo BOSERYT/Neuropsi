@@ -29,9 +29,8 @@ export class LoginComponent implements OnInit {
     return localStorage.getItem('token')
   }
 
-
+  
   onLogin(){
-    console.log(this.loginForm.value);
     if(this.loginForm.valid){
       this.auth.loginAPI(this.loginForm.value)
       .subscribe({
@@ -55,7 +54,7 @@ export class LoginComponent implements OnInit {
         text: 'Usuario ó contraseña incorrecto. Favor de verificar',
       })
     }else{
-
+      
       this.validateAllFormsFileds(this.loginForm);
      Swal.fire({
         icon: 'error',
@@ -66,7 +65,7 @@ export class LoginComponent implements OnInit {
   }
 
 
-
+  
 
   ocultarContrasena() {
     this.isText = !this.isText;

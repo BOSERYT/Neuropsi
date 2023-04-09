@@ -35,6 +35,12 @@ import { MiComponente } from './Components/Fluidez_verbal/inputs/inputs.componen
 import { AppfluidezComponent } from './Components/Fluidez_verbal/fluidex.component';
 import { ResultadoComponent } from './Components/Fluidez_verbal/resultado/resultado.component';
 import { DetecciondigitosComponent } from './Components/detecciondigitos/detecciondigitos.component';
+import { FuncionesComponent } from './Components/funciones/funciones.component';
+import { FuncionesReacComponent } from './Components/funciones-reac/funciones-reac.component';
+import { FuncionesMotorasComponent } from './Components/funciones-motoras/funciones-motoras.component';
+import { flComponent } from './Components/funciones-motoras/resultado/resultado.component';
+import { apptotal } from './Components/funciones-motoras/total/total.component';
+import { CambiomanoComponent } from './Components/cambiomano/cambiomano.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +52,7 @@ import { DetecciondigitosComponent } from './Components/detecciondigitos/detecci
     CodiCarasComponent,
     DeteccionvisualComponent,
     DibujossecuencialesComponent,
-    EvocacionComponent,
+    EvocacionComponent, 
     Evocacion2Component,
     FluideznoverbalComponent,
     FormacionCategoriasComponent,
@@ -64,23 +70,30 @@ import { DetecciondigitosComponent } from './Components/detecciondigitos/detecci
     RetencionDigitosProgresionComponent,
     SeriesSucesivasComponent,
     MeCarasComponent,
-    MiComponente,
+    MiComponente, 
     AppfluidezComponent,
     ResultadoComponent,
-    DetecciondigitosComponent
+    DetecciondigitosComponent,
+    FuncionesComponent,
+    FuncionesReacComponent,
+    FuncionesMotorasComponent,
+    flComponent,
+    apptotal,
+    CambiomanoComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
- ],
-  // providers: [{
-  //   provide:HTTP_INTERCEPTORS,
-  //   useClass:TokenInterceptor,
-  //   multi:true
-  // }],
+  ],
+  providers: [{
+    provide:HTTP_INTERCEPTORS,
+    useClass:TokenInterceptor,
+    multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
