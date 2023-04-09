@@ -1,0 +1,70 @@
+.buttons-container div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.buttons-container div:nth-child(7n) {
+    display: block;
+    clear: both;
+}
+
+.buttons-container button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container p,
+.container button {
+    padding: 5px;
+}
+
+.container div:last-child {
+    text-align: right;
+    padding-right: 15px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+button:hover {
+    outline: 2px solid rgb(49, 162, 152);
+
+}
+
+button:active {
+    outline: 3px solid rgb(33, 110, 104);
+}
+
+button:focus {
+
+    outline: 2px solid rgb(49, 162, 49);
+}
+
+.buton-fin {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2196F3;
+    /* color azul por defecto */
+    width: 10%;
+    box-sizing: border-box;
+}
+
+.buton-fin:focus {
+    outline: none;
+}
+
+.buton-fin:active {
+    background-color: #1a64a1;
+    /* color azul por defecto */
+}
